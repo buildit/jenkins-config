@@ -9,7 +9,7 @@ pipeline {
             label 'k8s'
             inheritFrom 'base'
             containerTemplate {
-                name 'alpine'
+                name 'maven'
                 image 'alpine:3.7'
                 ttyEnabled true
                 command 'cat'
